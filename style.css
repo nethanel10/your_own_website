@@ -1,7 +1,10 @@
 body{
-    background-image: url(/images/background\ desktop.png);
+    background-image: url(/images/background\ desktop.png )  ;
+background-size: cover;
+background-repeat: no-repeat;
 }
-*{
+
+body, html{
     margin: 0;
     padding: 0;
 }
@@ -9,6 +12,7 @@ nav{
     background-color: #150099;
     display: flex;
     justify-content: space-between;
+    position:sticky;
 
 }
 .left{
@@ -59,7 +63,7 @@ a{
 }
 .firstcountry{
     display: flex;
-    padding: 1rem;
+    align-items: center;
 }
 
 .secondecountry{
@@ -79,9 +83,79 @@ a{
     text-align: center;
     align-items: center;
 }
+.aboutme{
+    display: flex;
+    background-color: #D9D9D9;
+    height: auto;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.profile-img{
+    width: 100px;
+    height:140px    ;
 
+}
+.aboutmeright{
+    display: flex;
+}
+.contact{
+    display: flex;
+    background-color: #D9D9D9;
+    height: auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-right{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.email-icon{
+    display: flex;
+    align-items: center;
+}
+.email-img{
+    width: 60px;
+    height: 60px;
+}
+.phone-icon{
+    display: flex;
+    align-items: center;
+}
+.phone-png{
+    width: 60px;
+    height: 60px;
+}
+.github-img{
+    width: 60px;
+    height: 60px;
+}
+.github-icon{
+    display: flex;
+    align-items: center;
+}
+a:hover{
+    background-color: green;
+}
+.china-description{
+    font-size: 15px;
+}
 @media screen and (max-width: 700px) {
     .countryCards {
         flex-direction: column;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    .aboutme {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .profile-img {
+        width: 9rem;
+        height: 10rem;
     }
 }
